@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ci-audit — Auditoría de Madurez Técnica · CI Nicaragua</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 3rem auto; padding: 0 1.25rem; color: #1f2937; line-height: 1.55; }
+  h1 { font-size: 1.6rem; }
+  code, pre { background: #f3f4f6; border-radius: 6px; }
+  code { padding: .15em .35em; }
+  pre { padding: .9rem 1.1rem; overflow-x: auto; }
+  .tag { display: inline-block; background: #eef2ff; color: #3730a3; border-radius: 999px; padding: .15em .7em; font-size: .82rem; font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>🧠 ci-audit — Auditoría de Madurez Técnica</h1>
+<p><span class="tag">Programa de Incubación · Hackathon Nicaragua 2026</span></p>
+<p>Tercer instrumento de caracterización: mide la madurez técnica de tu proyecto
+extrayendo <strong>evidencia objetiva del código</strong> (git, tests, CI/CD, documentación,
+seguridad). No es un formulario: es un escaneo real de tu repositorio.</p>
+
+<h2>Cómo ejecutarlo</h2>
+<p>Corré el comando dentro del directorio raíz de tu proyecto:</p>
+<pre># Opción A: con npx (Node 18+, recomendado)
+npx ci-audit
+
+# Opción B: instalar globalmente
+npm i -g ci-audit && ci-audit
+
+# Opción C: descargar el script
+curl -s https://rojascristiane.github.io/ci-audit-hn26/ci_audit.cjs -o ci_audit.cjs
+node ci_audit.cjs</pre>
+
+<h2>Qué mide</h2>
+<p>10 dimensiones objetivas (0-10 cada una): madurez git, testing, CI/CD,
+documentación, seguridad, estructura del proyecto, deploy, calidad de código,
+dependencias y estado del repositorio. El score compuesto (0-100) se envía
+automáticamente al panel de evaluación al confirmar.</p>
+
+<p><small>Herramienta interna del programa — uso exclusivo de equipos incubados.</small></p>
+</body>
+</html>

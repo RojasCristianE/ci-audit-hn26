@@ -1,0 +1,16 @@
+# Outputs del scanner y del entorno
+ci-audit-result.json
+__pycache__/
+node_modules/
+
+# Archivos internos del programa — no publicar
+AGENTS.md
+plan-ci-audit.md
+REPORTE-TECNICO.md
+mentor_rubric.cjs
+test-battery/
+data/
+informe/
+
+# apps-script/ SÍ se versiona: el código del panel no contiene secretos
+# (la credencial es el acceso del script a su planilla, vía cuenta del dueño)

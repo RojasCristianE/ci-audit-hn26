@@ -1,0 +1,33 @@
+{
+  "name": "ci-audit",
+  "version": "1.0.1",
+  "description": "CI Nicaragua: Audit de Madurez Técnica para Startups — Hackathon 2026",
+  "license": "MIT",
+  "author": "Cristian Rojas <cristianrg333@gmail.com>",
+  "type": "commonjs",
+  "main": "ci_audit.cjs",
+  "bin": {
+    "ci-audit": "ci_audit.cjs"
+  },
+  "files": [
+    "ci_audit.cjs"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "prepublishOnly": "node --check ci_audit.cjs && echo 'sintaxis OK, listo para publicar'"
+  },
+  "keywords": [
+    "audit",
+    "startup",
+    "hackathon",
+    "ci-nicaragua",
+    "madurez-tecnica"
+  ],
+  "homepage": "https://rojascristiane.github.io/ci-audit-hn26/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RojasCristianE/ci-audit-hn26.git"
+  }
+}
